@@ -1,3 +1,5 @@
+const randome = require('./random');
+
 //task 1
 const currentDate = new Date();
 const hours = currentDate.getHours()<10? `0${currentDate.getHours()}` : currentDate.getHours();
@@ -9,3 +11,5 @@ console.log(`Date: ${hours}:${minutes}  ${day}.${month}.${currentDate.getFullYea
 const fileName = process.argv[1].includes('/') ? process.argv[1].split('/').pop() : process.argv[1].split('\\').pop();
 console.log('File:', fileName);
 
+//task 2
+console.log('Random number: ', randome(1,10))
