@@ -12,7 +12,7 @@ const httpGet = (url) => new Promise((resolve, reject) => {
             resolve(JSON.parse(data));
         });
 
-    }).on("error", (error) => {
+    }).on('error', (error) => {
         reject(error);
         return;
     });
